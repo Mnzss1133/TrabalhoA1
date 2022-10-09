@@ -240,7 +240,7 @@ for links in site2_musicas.findAll('a'):
     site_letra = BeautifulSoup(conteudo_letra, 'html.parser')
 
     letras_jb = site_letra.find('div', attrs={'class':'cnt'})
-    lista_letras.append(letras_jb.get_text)
+    lista_letras.append(letras_jb.get_text())
 #print(lista_letras) 
 #parte 3
 plt.bar(album_Changes_Duracao,album_Changes)
