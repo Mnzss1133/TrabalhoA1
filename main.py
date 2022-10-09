@@ -220,41 +220,6 @@ def musicas_menos_tocada_da_história():
 
 
 #Grupo 2
-lista_musc=[]
-lista_album=[]
-lista_num=[]
-url = 'https://www.vagalume.com.br/justin-bieber/discografia/'
-vagalume = requests.get(url)
-content = vagalume.content
-site = BeautifulSoup(content, 'html.parser')
-
-#HTML da Discografia
-discografia=site.find_all('div', attrs={'class':'letrasWrapper col1-2'})
-#print(discografia)
-
-#Todas as músicas possuem o <a>,e o nameMusic então usaremos o for para pegar todas elas e adicionar em uma lista chamda lista_musc.
-for musicas in site.find_all('a'):
-    if 'nameMusic' in str(musicas):
-        lista_musc.append(musicas.get_text())
-#print(lista_musc)
-#Quantidade de músicas ao todo
-#print('=-'*35)
-#print(f'O número de músicas ao todo é de {len(lista_musc)} faixas')
-#print('=-'*35)
-
-
-#Pegar todos os albums que estão no site, mesma teoria do item acima.
-for album in site.find_all('h3'):
-    if 'albumTitle' in str(album):
-        lista_album.append(album.get_text())
-#print(lista_album)
-
-# o número de musicas que cada albúm contém.
-for numeromusicas in site.find_all('p'):
-    if 'track' in str(numeromusicas):
-        lista_num.append(numeromusicas.get_text())
-#print(lista_num)
-
 #Usando o site ouvirmusica.com.br para conseguir pegas as letras das músicas
 url2='https://www.ouvirmusica.com.br/justin-bieber/'
 ouvirmusica = requests.get(url2)
@@ -276,6 +241,7 @@ for links in site2_musicas.findAll('a'):
 
     letras_jb = site_letra.find('div', attrs={'class':'cnt'})
     lista_letras.append(letras_jb.get_text)
+#print(lista_letras) 
 #parte 3
 plt.bar(album_Changes_Duracao,album_Changes)
 plt.show()
