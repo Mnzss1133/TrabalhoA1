@@ -15,7 +15,7 @@ Quais são as palavras mais comuns nos títulos das músicas?
 Quais são as palavras mais comuns nas letras das músicas, por Álbum?                                                                                                                        
 Quais são as palavras mais comuns nas letras das músicas, em toda a discografia?                                                                                                    
 O título de um álbum é tema recorrente nas letras?                                                                                                                                      
-O título de uma música é tema recorrente nas letras?                                                                                                                                   
+O título de uma música é tema recorrente nas letras?                                                                                                                                           
 Grupo de Perguntas 3:                                                                                                                                                                                   
-
 Elaborar mais 3 perguntas sobre temas e características da discografia da banda.
+
