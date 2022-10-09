@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 import seaborn as sns
-#Usando o site wikipedia para conseguir pegar as Músicas.
+##Scapping da Wikipedia
 url='https://pt.wikipedia.org/wiki/Discografia_de_Justin_Bieber'
 ouvirmusica = requests.get(url)
 conteudo = ouvirmusica.content
