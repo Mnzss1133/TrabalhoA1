@@ -242,13 +242,13 @@ for links in site2_musicas.findAll('a'):
     letras_jb = site_letra.find('div', attrs={'class':'cnt'})
     lista_letras.append(letras_jb.get_text())
 #print(lista_letras) 
+
+
 # Grupo 3 
-
-
-
-
 def media():
     DF_principal_media = DF_principal['Duração'].mean()
     return f'f A media da duracao de todas as músicas é de {DF_principal_media}'
 print(media)
+
+#Grupo_1_Parte_3
 
