@@ -3,12 +3,12 @@ import requests
 from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 import seaborn as sns
-##Scapping da Wikipedia
+#Scraping da Wikipedia
 url='https://pt.wikipedia.org/wiki/Discografia_de_Justin_Bieber'
 ouvirmusica = requests.get(url)
 conteudo = ouvirmusica.content
 site= BeautifulSoup(conteudo, 'html.parser')
-#Scrapping do album Journals, que não era possível pegar ele através do link da wikipedia normal
+#Scraping do album Journals, que não era possível pegar ele através do link da wikipedia normal
 url3 = 'https://pt.wikipedia.org/wiki/Journals'
 Journals = requests.get(url3)
 content3= Journals.content
