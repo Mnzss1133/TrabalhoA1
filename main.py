@@ -221,9 +221,9 @@ def musicas_menos_tocada_da_história():
 
 # Grupo 3 
 def media():
-    DF_principal_media = DF_principal['Duração'].mean()
-    return f'f A media da duracao de todas as músicas é de {DF_principal_media}'
-print(media)
+    print(DF_principal['Duração'].mean())
+
+media()
 
 
 
